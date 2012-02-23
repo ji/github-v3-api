@@ -77,7 +77,7 @@ class GitHubV3API
       end
     end
 
-    # Returns an array of the GitHubV3API::Branch unstances containing the branches for
+    # Returns an array of the GitHubV3API::Branch instances containing the branches for
     # the repository specified by repo_name, that the user specified by user has access
     # to.
     #
@@ -86,6 +86,18 @@ class GitHubV3API
     def list_branches(user, repo_name)
       @connection.get("/repos/#{user}/#{repo_name}/branches").map do |branch_data|
         GitHubV3API::Branch.new(self, branch_data)
+      end
+    end
+
+    # Returns an array of the GitHubV3API::Tag instances containing the tags for
+    # the repository specified by repo_name, that the user specified by user has access
+    # to.
+    #
+    # +user+:: the string ID of the user, e.g. "octocat"
+    # +repo_name+:: the string ID of the repository, e.g. "hello-world"
+    def list_tags(user, repo_name)
+      @connection.get("/repos/#{user}/#{repo_name}/tags").map do |tag_data|
+        GitHubV3API::Tag.new(self, tag_data)
       end
     end
   end

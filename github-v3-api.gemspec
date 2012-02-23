@@ -5,10 +5,10 @@
 
 Gem::Specification.new do |s|
   s.name = "github-v3-api"
-  s.version = "0.3.1"
+  s.version = "0.3.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["John Wilger"]
+    s.authors = ["John Wilger"]
   s.date = "2012-01-20"
   s.description = "Ponies"
   s.email = "johnwilger@gmail.com"
@@ -37,6 +37,7 @@ Gem::Specification.new do |s|
     "lib/github_v3_api/orgs_api.rb",
     "lib/github_v3_api/repo.rb",
     "lib/github_v3_api/branch.rb",
+    "lib/github_v3_api/tag.rb",
     "lib/github_v3_api/repos_api.rb",
     "lib/github_v3_api/user.rb",
     "lib/github_v3_api/users_api.rb",

@@ -1,8 +1,8 @@
 # See GitHubV3API documentation in lib/github_v3_api.rb
 class GitHubV3API
-  # Represents a single GitHub Branch and provides access to its data attributes.
-  class Branch < Entity
-    attr_reader :name, :commit
+  # Represents a single GitHub Tag and provides access to it's data attributes.
+  class Tag < Entity
+    attr_reader :name, :commit, :zipball_url, :tarball_url
 
     private
 
