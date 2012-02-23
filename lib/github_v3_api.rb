@@ -9,6 +9,7 @@ require 'github_v3_api/orgs_api'
 require 'github_v3_api/org'
 require 'github_v3_api/repos_api'
 require 'github_v3_api/repo'
+require 'github_v3_api/branch'
 
 # This is the main entry-point to the GitHub v3 API.
 #

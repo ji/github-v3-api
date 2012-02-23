@@ -36,6 +36,7 @@ Gem::Specification.new do |s|
     "lib/github_v3_api/org.rb",
     "lib/github_v3_api/orgs_api.rb",
     "lib/github_v3_api/repo.rb",
+    "lib/github_v3_api/branch.rb",
     "lib/github_v3_api/repos_api.rb",
     "lib/github_v3_api/user.rb",
     "lib/github_v3_api/users_api.rb",
