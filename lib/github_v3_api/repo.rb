@@ -23,6 +23,14 @@ class GitHubV3API
       api.list_forks(owner_login, name)
     end
 
+    def list_branches
+      api.list_branches(owner_login, name)
+    end
+
+    def list_tags
+      api.list_tags(owner_login, name)
+    end
+
     private
 
     def natural_key
